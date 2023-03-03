@@ -22,13 +22,6 @@ body{
     }
 }
 
-@media screen and (orientation: landscape) {
-    body{
-        background-color: lightblue
-    }
- 
-}
-
 .sign-in{
     background-color: white;
     display: flex;
