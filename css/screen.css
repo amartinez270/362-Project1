@@ -1,68 +1,148 @@
-html, body{
+html {
     height: 100%;
+}
+body {
+    background-color: #B3995B;
+    background-image: url("../media/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+label {
+    font-family: 'Raleway', Arial;
+    color: #FFEFC9;
+}
+#signup {
+    padding-top: 75px;
+}
+.header {
+    font-size: 35px;
+    font-family: 'Raleway', Arial;
+    padding-bottom: 30px;
+    color: #FFEFC9;
     text-align: center;
 }
-
-body{
-    background-image: url("../image/background.png");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    font-family: "Verdana", sans-serif;
+.main {
+    height: 500px;
+    width: 500px;
+    right: 40%;
+    position: absolute;
 }
-
-@media screen and (max-width: 600px) {
-    body{
-        background-image: url("../image/background.png");
-    }
-}
-
-@media screen and (min-width: 600px) {
-    body{
-        background-image: url("../image/background.png");
-    }
-}
-
-.sign-in{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    padding: 17.6px 17.6px 17.6px 17.6px;
-    max-width: 1120px;
-    border-radius: 3.2px;
-}
-
-.sign-in h2{
-    font-size: 25px; 
-    width: max-content;
-    padding: 0 0 16px 0;
-    margin: 0 auto;
-}
-
-.div input {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 16px;
-}
-
-.div label{
-    font-size: 19.2px; 
-    font-weight: 400;
-    padding-bottom: 4.8px;
-}
-
-.div input{
-    border:1px solid #c3bfbf;
+.labels {
     font-size: 30px;
-    outline: 0;
-    padding: 6.4px 1.6px 6.4px 6.4px;
 }
-
-button{
-    background-color: red;
-    border: 0;
-    border-radius: 8px;
+#email {
+    border: none;
+    font-family: 'Raleway', Arial;
+    background: transparent;
     color: #ffffff;
-    font-size: 30px;
-    padding: 9.6px;
+    font-size: 25px;
+    width: 400px;
+    outline: none;
+}
+#user_name {
+    border: none;
+    font-family: 'Raleway', Arial;
+    background: transparent;
+    color: #ffffff;
+    font-size: 25px;
+    width: 325px;
+    outline: none;
+}
+#password {
+    border: none;
+    font-family: 'Raleway', Arial;
+    background: transparent;
+    color: #ffffff;
+    font-size: 25px;
+    width: 350px;
+    outline: none;
+}
+::placeholder { 
+    color: rgb(209, 186, 224);
+    opacity: 1;
+}
+.emaildiv {
+    padding-bottom: 10px;
+}
+.userdiv {
+    padding-bottom: 10px;
+}
+.passdiv {
+    padding-bottom: 10px;
+}
+.button {
+    color: rgb(209, 186, 224);
+    background-color: #5f0859;
+    border: none;
+    height: 50px;
+    width: 145px;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.button:hover {
+    color: #5f0859;
+    background-color: rgb(209, 186, 224);
+}
+.bttncenter {
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    text-align: center;
+}
+.checkdiv {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .header {
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+        padding-bottom: 25px;
+        color: #FFEFC9;
+    }
+    #email {
+        width: 90%;
+    }
+    #user_name {
+        width: 90%;
+    }
+    #password {
+        width: 90%;
+    }
+    .main {
+        text-align: center;
+        width: 100%;
+
+    }
+    .button {
+        text-align: center;
+    }
+    .checkdiv {
+        width: 100%;
+        position: absolute;
+        bottom: 5%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 }
